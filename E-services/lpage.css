@@ -1,0 +1,342 @@
+.imgbx {
+    background-image: url('../img/12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.imgbx .filter {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.imgbx .tetimg {
+    margin: 6vh 10px;
+    width: 55vw;
+    height: auto;
+}
+
+.divs-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 35px 25px;
+    margin: 0px auto 0px auto;
+    position: relative;
+}
+
+.divs-one {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    transform: skew(-7deg);
+}
+
+.divs-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divs-two-one {
+    background-image: url(yogi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    z-index: 10;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.divs-two-two {
+    z-index: 10;
+    margin: 0px 30px;
+    font-size: 18px;
+}
+
+.fon-bold {
+    font-weight: 700;
+}
+
+@media screen and (max-width:650px) {
+    .divs-one {
+        transform: skew(-4deg);
+    }
+    .divs-two {
+        flex-direction: column;
+    }
+    .divs-main {
+        padding: 20px 12px;
+    }
+    .divs-two-one {
+        margin: 30px 0px;
+    }
+    .divs-two-two {
+        margin: 0px 20px;
+    }
+}
+
+.contentbx {
+    position: relative;
+    margin: 6vh 10px;
+    width: 40vw;
+    height: auto;
+    padding-left: 25px;
+}
+
+.contentbx .contan {
+    padding: 25px;
+}
+
+.lv-lin {
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    margin: 0px;
+    height: 100%;
+    width: 5px;
+    border: 0;
+    background: #fd1a55;
+    background-image: -webkit-linear-gradient(90deg, #349cfd, #fd1a55);
+    background-image: -moz-linear-gradient(90deg, #349cfd, #fd1a55);
+    background-image: -ms-linear-gradient(90deg, #349cfd, #fd1a55);
+    background-image: -o-linear-gradient(90deg, #349cfd, #fd1a55);
+}
+
+.container {
+    display: inline;
+    position: relative;
+    padding: 0px 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #00a8ff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.inputbx input[type=text]:focus {
+    background-color: white;
+}
+
+.inputbx input[type=text],
+select {
+    max-width: 270px;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid #46616e;
+    letter-spacing: 1px;
+    color: #607d8b;
+    border-radius: 5px;
+}
+
+.inputbx input[type=password],
+select {
+    max-width: 270px;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid #46616e;
+    letter-spacing: 1px;
+    color: #607d8b;
+    border-radius: 5px;
+}
+
+
+/*button styling*/
+
+form {
+    width: fit-content;
+    background-color: white;
+}
+
+.buto-1 {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #00a8ff;
+}
+
+
+/*group of links*/
+
+@media screen and (max-width:850px) {
+    .imgbx .filter {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgbx .tetimg {
+        margin: 6vh 10px;
+        width: 95vw;
+        height: auto;
+    }
+    .contentbx {
+        position: relative;
+        margin: 6vh 10px;
+        width: auto;
+        height: auto;
+    }
+    .lv-lin {
+        height: 0%;
+        width: 0px;
+    }
+}
+
+.div-ext-link {
+    background-color: #f0f6fd;
+    padding: 8vh 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.div-div-ext {
+    background-color: #fff;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.tex-ext-link {
+    margin: 0px 1.5vw;
+    padding: 0.75vh 1.5vw;
+    transform: translateY(-40%);
+    background-color: #0a92d9;
+}
+
+.grp-links {
+    padding: 18px 0px 0px 25px;
+}
+
+.grp-links .links {
+    font-size: 18px;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #006ccc;
+}
+
+.grp-links .links i {
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.grp-links .links p {
+    display: inline;
+}
+
+@media screen and (max-width:900px) {
+    .flx-lik {
+        margin: 4vh 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    .flx-lik .left {
+        width: 90vw;
+    }
+    .flx-lik .right {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .div-ext-link {
+        padding: 3vh 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    .div-div-ext {
+        max-width: 550px;
+        width: 85vw;
+        margin: 3vh 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    .tex-ext-link {
+        margin: 0px 1.5vw;
+        padding: 0.75vh 1.5vw;
+        transform: translateY(-40%);
+    }
+}
