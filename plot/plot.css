@@ -1,0 +1,150 @@
+.abt-img-1 {
+    height: 80vh;
+    width: 100%;
+}
+
+.abt-img-1 div {padding: 3vmin 5vmin;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.abt-img-1 div h1 {
+    font-size: 12vh;
+    font-weight: lighter;
+}
+
+.abt-img-2 {
+    height: 30vh;
+    width: 100%;
+}
+
+.polt-img {
+    background-image: url('../img/avplot.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.auc-img {
+    background-image: url('../img/eauc.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.niv-img {
+    background-image: url('../img/avvvplot.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.abt-img-2 div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.abt-img-2 div h1 {
+    font-size: 6vh;
+    font-weight: lighter;
+}
+
+.com-mains {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.mains-one {
+    height: 200px;
+    width: 45vw;
+    margin: 10px;
+}
+
+.flx-lik {
+    margin: 4vh 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.flx-lik .left {
+    width: 90vw;
+}
+
+.flx-lik .right {
+    width: 90vw;
+}
+
+.grp-links {
+    border-radius: 5px;
+    margin: 18px 25px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.grp-links .links {
+    font-size: 16px;
+    padding: 12px 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #4a90e2;
+    font-weight: 700;
+    line-height: 1.85714em;
+}
+
+.grp-links .links:nth-child(1) {
+    border-top: 0px solid black;
+}
+
+.grp-links .links:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.grp-links .links i {
+    font-size: 18px;
+    padding-right: 14px;
+    font-weight: 900;
+}
+
+.grp-links .links:hover {
+    color: #2275d7;
+    text-decoration: none;
+}
+
+.grp-links .links:focus {
+    color: #23527c;
+}
+
+.grp-links .links p {
+    display: inline;
+}
+
+@media screen and (max-width:900px) {
+    .com-mains {
+        flex-direction: column;
+    }
+    .mains-one {
+        width: 90vw;
+    }
+}

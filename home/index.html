@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | UPSIDA</title>
+    <script defer src="https://kit.fontawesome.com/b8be333c62.js" crossorigin="anonymous"></script>
+    <meta name="keywords" content="UPSIDA">
+    <meta name="author" content="We thinc solutions">
+    <meta name="author" content="Ravula Pranay Kumar Reddy">
+    <meta name="author" content="Bokka Varun Reddy">
+    <meta name="author" content="Bokka Nirvan Reddy">
+    <link rel="icon" href="../logo-min.PNG">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav disp-lap-nav">
+        <div class="div-bar" id="web-mail">
+            <div class="title flex-row">
+                <div><a href="http://webmail.upsidc.com/">Web Mail</a></div>
+            </div>
+            <div class="icon  flex-row">
+                <div><i class="fas fa-sign-in-alt"></i></div>
+            </div>
+        </div>
+        <div class="div-bar" id="login">
+            <div class="title  flex-row">
+                <div><a href="https://www.onlineupsidc.com/OfficeUsers/Login.aspx">Login</a></div>
+            </div>
+            <div class="icon flex-row">
+                <div><i class="far fa-envelope"></i></div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="flex-row nav-bar">
+            <div class="right">
+                <div class="img curpoi" onclick="window.location.assign('#')"><img class="curpoi" src="../logo-min.PNG" alt=""></div>
+            </div>
+            <div class="left">
+                <div class="disp-phn-nav">
+                    <div id="topcloseicon" class="icobut curpoi" onclick="phone_nav_bar()">
+                        <div class="x-bar1"></div>
+                        <div class="x-bar2"></div>
+                        <div class="x-bar3"></div>
+                    </div>
+                    <div id="mynav-side" class="nav-side">
+                        <div class="a curpoi" onclick="window.location.assign('#')">Home</div>
+                        <div class="a curpoi" onclick="window.location.assign('../about/index.html')">About</div>
+                        <div class="a curpoi" onclick="window.location.assign('../policies/index.html')">Policies</div>
+                        <div class="a curpoi" onclick="window.location.assign('../flagship/index.html')">Flagship</div>
+                        <div class="a curpoi" onclick="window.location.assign('http://gis.onlineupsidc.com')">GIS</div>
+                        <div class="a curpoi" onclick="window.location.assign('../E-services/index.html')">E-servies</div>
+                        <div class="a curpoi" onclick="window.location.assign('../resources/index.html')">Resource</div>
+                        <div class="a curpoi" onclick="window.location.assign('../plot/index.html')">Available Plot</div>
+                        <div class="a curpoi" onclick="window.location.assign('../contact/index.html')">Contact</div>
+                        <div class="a curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/OfficeUsers/Login.aspx')">Login</div>
+                        <div class="a curpoi" onclick="window.location.assign('http://webmail.upsidc.com/')">Web mail</div>
+                    </div>
+                </div>
+                <div class="disp-lap-nav">
+                    <div class="flex-row width-fit">
+                        <div onmouseover="visible_nav(99)" onclick="window.location.assign('#')" class="nav-item nav-acti curpoi">
+                            <div class="flex-row">
+                                <p class="">Home</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(0)" onclick="window.location.assign('../about/index.html')" class="nav-item drop-men curpoi">
+                            <div class="flex-row">
+                                <p class="">About</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(99)" onclick="window.location.assign('../policies/index.html')" class="nav-item curpoi">
+                            <div class="flex-row">
+                                <p class="">Policies</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(1)" onclick="window.location.assign('../flagship/index.html')" class="nav-item drop-men curpoi">
+                            <div class="flex-row">
+                                <p class="">Flagship</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(99)" onclick="window.location.assign('http://gis.onlineupsidc.com')" class="nav-item curpoi">
+                            <div class="flex-row">
+                                <p class="">GIS</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(99)" onclick="window.location.assign('../E-services/index.html')" class="nav-item curpoi">
+                            <div class="flex-row">
+                                <p class="">E-services</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(2)" onclick="window.location.assign('../resources/index.html')" class="nav-item drop-men  curpoi">
+                            <div class="flex-row">
+                                <p class="">Resources</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(99)" onclick="window.location.assign('../plot/index.html')" class="nav-item curpoi">
+                            <div class="flex-row">
+                                <p class="">Available Plot</p>
+                            </div>
+                        </div>
+                        <div onmouseover="visible_nav(3)" onclick="window.location.assign('../contact/index.html')" class="nav-item drop-men curpoi">
+                            <div class="flex-row">
+                                <p class="">Contact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mega-menu disp-lap-nav">
+
+            <div class="nav-drop-down">
+                <div class="sam-nav">
+                    <div class="image abt-nav-img"></div>
+                    <div class="right">
+                        <div class="matter">
+                            <div class="heading">
+                                <h2>ABOUT US </h2>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../about/index.html#')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Our Mission</p>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../about/index.html#')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Leadership</a>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../about/index.html#')"> <i class="fas fa-angle-right"></i>
+                                <p class="">History</a>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../about/index.html#')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Our Investors</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drop-down">
+                <div class="sam-res">
+                    <div class="sam-res-one heading">
+                        <h2>Flagship Projects</h2>
+                    </div>
+                    <div class="sam-res-two">
+                        <div class="sam-res-sub">
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Trans-Ganga.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Trans-Ganga Hitech City</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Saraswati.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Saraswati Hitech City</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Dibiyapur.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Dibiyapur Plastic Park</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Perfume.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Perfume Park</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Baheri.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Baheri Industrial Area</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/mega.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class=""> Mega Leather Cluster</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../flagship/Moradabad.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class=""> Moradabad SEZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-drop-down">
+                <div class="sam-res">
+                    <div class="sam-res-one heading">
+                        <h2>RESOURCE CENTER </h2>
+                    </div>
+                    <div class="sam-res-two">
+                        <div class="sam-res-sub">
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Industrial Area operating process</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../order/index.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Office Orders</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Operating Manual</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Document for approval of building plan</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Present Rates</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('../resources/development.html')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Development Process</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Conditions for tender</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Allotment application form</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Services Rules</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">By Laws of UPSIDA</p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Ammendment In UPSIDA Land Development &amp; Building Regulation 2018 </p>
+                            </div>
+                            <div class="sam-sub-one curpoi" onclick="window.location.assign('#')">
+                                <i class="fas fa-angle-right"></i>
+                                <p class="">Second Ammendment In UPSIDA Land Development</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-drop-down">
+                <div class="sam-nav">
+                    <div class="image con-nav-img"></div>
+                    <div class="right">
+                        <div class="matter">
+                            <div class="heading">
+                                <h2>Contact us</h2>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../contact/head.html')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Head Office</p>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../contact/Regional.html#')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Regional Office</a>
+                            </div>
+                            <div class="sam-sub curpoi" onclick="window.location.assign('../contact/division.html')"> <i class="fas fa-angle-right"></i>
+                                <p class="">Divisonal Office</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-div" onmouseover="noneall_nav()">
+
+
+
+
+
+        <div class="man-slid">
+            <div class="cir-1"></div>
+            <div class="cir-2"></div>
+            <div class="cir-3"></div>
+            <div class="logo var"><img src="logo.PNG"></div>
+            <div class="flex-row var text1 white1 tecenter">
+                <h1>Uttar Pradesh State Industrial Development Authority</h1>
+            </div>
+            <div class="flex-row var text2 white1 tecenter">
+                <h1>We have developed many iconic industrial areas</h1>
+            </div>
+            <div class="flex-row var text3 white1">
+                <h1>UPSIDA is the nodal agency for developing industrial infrastructure and spearheading the industrial promotion in the State</h1>
+            </div>
+            <div class="flex-row img1 var">
+                <img src="../img/trans.jpg" alt="">
+            </div>
+
+            <div class="flex-row var text4 white1 tecenter">
+                <h1>Est. on 29 MARCH 1961</h1>
+            </div>
+            <div class="flex-col var count1 cont white1 tecenter">
+                <h1 id="dg-ct-1">11k+</h1>
+                <h2>Crores Investmets</h2>
+            </div>
+            <div class="flex-col var count2 cont white1 tecenter">
+                <h1>1L+</h1>
+                <h2>Employment generated</h2>
+            </div>
+            <div class="flex-col var count3 cont white1 tecenter">
+                <h1>2k+</h1>
+                <h2>Acres alloted</h2>
+            </div>
+            <div class="flex-col var count4 cont white1 tecenter">
+                <h1>3k+</h1>
+                <h2>units allotted</h2>
+            </div>
+        </div>
+
+
+        <div class="div-ext-link ">
+            <div class="div-div-ext">
+                <img class="lazy" data-src="../img/invest1.jpg" style="width:100%">
+                <div class="bgbluel tex-ext-link">
+                    <p class="h6 white1">Invest in UPSIDA</p>
+                </div>
+                <div class="paddiv2vw" style="padding-top: 0px;">
+                    <p>UPSIDA is a Public Sector Undertaking of the Government of Uttar Pradesh, which promotes industries and develops industrial infrastructure in the State. Its industrial areas are equipped with infrastructure facilities likes roads,
+                        drains, internal power lines, street lights, etc.</p>
+
+                    <div class="grp-links">
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('../flagship/index.html')"><i class="far fa-hand-point-right"></i>
+                            <p>Flagship Projects</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('../policies/index.html')"><i class="far fa-hand-point-right"></i>
+                            <p>Policies of UPSIDA</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://niveshmitra.up.nic.in/')"><i class="far fa-hand-point-right"></i>
+                            <p>APPLY HERE FOR ONLINE SERVICES</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/UPSIDAInformationGuide.pdf')"><i class="far fa-hand-point-right"></i>
+                            <p>INVESTORS GUIDE</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://eservices.onlineupsidc.com/RegistrationLogistics.aspx')"><i class="far fa-hand-point-right"></i>
+                            <p>APPLICATION FOR WAREHOUSING AND LOGISTICS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-div-ext  ">
+                <img class="lazy" data-src="../img/invest2.jpg" style="width:100%">
+                <div class=" tex-ext-link">
+                    <p class="h6 white1">Grow with UPSIDA</p>
+                </div>
+                <div class="paddiv2vw" style="padding-top: 0px;">
+                    <p>UPSIDA provides contemporary infrastructure facilities and services to our entrepreneurs. We strive to build on our strength as a pillar of the pulsating industrial ecosystem of uttar pradesh.</p>
+                    <div class="grp-links">
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://eservices.onlineupsidc.com/Default.aspx')"><i class="far fa-hand-point-right"></i>
+                            <p>TRACK APPLICATION</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/Newsletter_june21.pdf')"><i class="far fa-hand-point-right"></i>
+                            <p>UPSIDA NEWS LETTER</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('../order/index.html')"><i class="far fa-hand-point-right"></i>
+                            <p>Office Orders</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('../e-services/index.html')"><i class="far fa-hand-point-right"></i>
+                            <p>E-services</p>
+                        </div>
+                        <div class="links flex-row teupper curpoi" onclick="window.location.assign('https://eservices.onlineupsidc.com/Advertisement.aspx')"><i class="far fa-hand-point-right"></i>
+                            <p>Nivesh Mitra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="slideshow-container">
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide1.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide1.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Trans Ganga </h1>
+                </div>
+            </div>
+
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide2.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide2.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Agro Park</h1>
+                </div>
+            </div>
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide3.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide3.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Trans Delhi </h1>
+                </div>
+            </div>
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide4.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide4.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Plastic City</h1>
+                </div>
+            </div>
+
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide5.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide5.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1> Industrial Corridor</h1>
+                </div>
+            </div>
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide6.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide6.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Perfume Park</h1>
+                </div>
+            </div>
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide7.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide7.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Leather Park</h1>
+                </div>
+            </div>
+
+            <div class="mySlides ">
+                <img class="sli-pot lazy" data-src="../img/pslide8.jpg" style="width:100%">
+                <img class="sli-lan lazy" data-src="../img/slide8.jpg" style="width:100%">
+                <div class="sli-tet">
+                    <div></div>
+                    <h1>Theme Park</h1>
+                </div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+            <div id="slid-grp-menu" class="flex-col">
+                <div class="flex-row" style="align-items:flex-end;">
+                    <div class="slid-menu" onclick="clickSlides(1)">
+                        <p>Trans Ganga</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(2)">
+                        <p>Agro Park</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(3)">
+                        <p>Trans Delhi</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(4)">
+                        <p>Plastic City</p>
+                    </div>
+                </div>
+                <div class="flex-row" style="align-items:flex-end;">
+                    <div class="slid-menu" onclick="clickSlides(5)">
+                        <p>Industrial Corridar</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(6)">
+                        <p>Perfume Park</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(7)">
+                        <p>Leather Park</p>
+                    </div>
+                    <div class="slid-menu" onclick="clickSlides(8)">
+                        <p>Theme Park</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="news-div">
+            <div class="news-div-title">
+                <div class="div-letters">
+                    <div class="tecenter new-ttl" style="width: 100%;">
+                        <h2 class="cblac333">UPSIDA News letter</h2>
+                    </div>
+                    <br>
+                    <div class="grp-links">
+                        <div class="links curpoi flex-row" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/UPSIDA%20Newsletter%20Edition1%20July%202020%20V(1.0).pdf')">
+                            <p class="curpoi"><i class="far fa-file-pdf"></i>News letter : Edition-1 (dated: 20-10-2021)</p>
+                        </div>
+                        <div class="links curpoi flex-row" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/Newsletter%20Edition-2,%206%20Sep%202020%20(V1).pdf')">
+                            <p class="curpoi"><i class="far fa-file-pdf"></i>News letter : Edition-2 (dated: 20-12-2015)</p>
+                        </div>
+                        <div class="links curpoi flex-row" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/Newsletter_june21.pdf')">
+                            <p class="curpoi"><i class="far fa-file-pdf"></i>UPSIDA News Letter (Revised Letter)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-div-pages">
+                <div class="div-news">
+                    <h1 class="white1 tecenter" style="width: 100%;">News & Tenders</h1> <br>
+                    <div style="display:block;margin:auto;width:20%; height:4px;background-color:#fff;"></div>
+                    <br>
+                    <div class="news-grp">
+                        <h4 class="cblue3">08/07/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/396invitationpublicobj.pdf')">Notice regarding invitation of public objection/suggestion on partial conversion of area measuring 9290sqmt.</h3>
+                        <br>
+                        <h4 class="cblue3">30/06/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/396invitationpublicobj.pdf')">E-Tender Notice for maintenance and development and Electrification works in various Industrial Areas.</h3>
+                        <br>
+                        <h4 class="cblue3"> 16/03/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/etenderfile2.pdf')">E tender notice for Drainage Cleaning and Remodelling , Hardoi, IA Sandilla.</h3>
+                        <br>
+                        <h4 class="cblue3"> 16/03/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/mjunctionmerge.pdf')">Opportunity to get Industrial Pots in Kanpur, Fatehpur, TDS City, Unnao, Mathura, Mau, Amethi, Muzaffarnagar, Saharanpur, Barabanki, Hardoi, Etah, Baghpat, Applications invited for E-auction.</h3>
+                        <br>
+                        <h4 class="cblue3"> 16/03/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/etenderconsult.pdf')">E-Tender Notice for inviting Reputed Consultancies for Investment Promotion, Investment Facilitation and Impolementation of EODB/Businesses Reforms, in UPSIDA</h3>
+                        <br>
+                        <h4 class="cblue3">27/01/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/mjunctionad1.pdf')">Notice for U.P. STATE INDUSTRIAL DEVELOPMENT AUTHORITY PROPOSES E-AUCTION OF INDUSTRIAL PLOTS REGIONAL OFFICES LUCKNOW, JHANSI, MEERUT, AGRA, BAREILLY, KANPUR, & SURAJPUR</h3>
+                        <br>
+                        <h4 class="cblue3">27/01/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/noticee-auction.pdf')">Notice for E-Auction Services via M-Junction</h3>
+                        <br>
+                        <h4 class="cblue3">27/01/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/sub%20division%20of%20amalgamated%20plots.pdf')">Notice for Subdivision of Amalgamated Plots, plot number A1, A3 and amalgamated a3/1, Sector 22, Meerut Road, Ghaziabad.</h3>
+                        <br>
+                        <h4 class="cblue3">18/01/2021</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/18.1.21.pdf')">Notice for Dismentling of defective damage and old wiring & re-electrification of Regional Office Building, Kasna District, GB Nagar.</h3>
+                        <br>
+                        <h4 class="cblue3">29/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/UPSIDA%201.pdf')">Notice for public objections/Suggestions in layout plan of Itra Park/ Perfume Park, Thatia District, Kannauj.</h3>
+                        <br>
+                        <h4 class="cblue3">29/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/1169.pdf')">Notice of Approval of Amalgamation of Industrial Plot number 6A, 7A, 8A, 9A/ Industrial Area Secunderabad.</h3>
+                        <br>
+                        <h4 class="cblue3">23/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/cd9tender23.12.2020.pdf')">E-tender notice for inviting organisations & Authorities for maintenance and repair of Roads in Industrial Area Sidhwan, District Jaunpur & Industrial Area Agro Park Karkhiyaon, district Varanasi </h3>
+                        <br>
+                        <h4 class="cblue3">14/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/1113.pdf')">Notice for IA Mega Food Park, Bahedi, Ammendment in Development Policy , to be publisged in newspaper..</h3>
+                        <br>
+                        <h4 class="cblue3">11/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/1108.pdf')">Notice for IA Shahjahanpur, Ammendment in Development Policy , to be publisged in newspaper..</h3>
+                        <br>
+                        <h4 class="cblue3">02/12/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/1035.pdf')">Notice of Approval of Amalgamation of Industrial Plot number F-153 to F-155 and F-162 to F-164 and F-156 to F-161, Industrial Area SIDC Chandauli.</h3>
+                        <br>
+                        <h4 class="cblue3">07/08/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/bulkdrugpark.pdf')">e-Bid Notice for Appointment of Program Management Consultant for providing Comprehensive Consultancy Services including Preliminary Proposal, DPR, Master Planning, and Transaction Advisory for Bulk Drug Park in Uttar Pradesh</h3>
+                        <br>
+                        <h4 class="cblue3">09/11/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/etender9.11.2020.pdf')">E-Tender Notice for Construction of 1X5 MVA, 33/11 KV Sub-Station at IA Trishundi, Sultanpur</h3>
+                        <br>
+                        <h4 class="cblue3">16/10/2020</h4>
+                        <h3 class="white1 curpoi" onclick="window.location.assign('https://www.onlineupsidc.com/pdf/tenderprayagraj.pdf')">E-Tender Notice for work of Patch Repair of Roads at Agro park, Karkhiyaon, District Varanasi</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <div class="foot-img flex-col">
+        <div class="bg">
+            <div class="foot-grp">
+                <div class="foot-left">
+                    <div class="foot-title">
+                        <div class="inline">
+                            <h1 class="tecenter">Quick Links</h1>
+                            <div class="h-lin"></div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="lin curpoi" onclick="window.location.assign('https://eservices.onlineupsidc.com/Advertisement.aspx')">
+                            <h3>Nivesh Mitra</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('#')">
+                            <h3>Home</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../about/index.html')">
+                            <h3>About</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../policies/index.html')">
+                            <h3>Policies</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../flagship/index.html')">
+                            <h3>Flagship</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('http://gis.onlineupsidc.com/')">
+                            <h3>GIS</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../e-services/index.html')">
+                            <h3>E-services</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../order/index.html')">
+                            <h3>Office Orders</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('https://up.gov.in/')">
+                            <h3>Govt of UP</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('http://www.udyogbandhu.com/')">
+                            <h3>udyogu bandhu</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('https://etender.up.nic.in/nicgep/app')">
+                            <h3>Tenders UP</h3>
+                        </div>
+                        <div class="lin curpoi" onclick="window.location.assign('../contact/index.html')">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-right">
+                    <div class="foot-title">
+                        <div class="inline">
+                            <h1 class="tecenter">Address</h1>
+                            <div class="h-lin"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="telight">Address:</h4>
+                        <h4> UPSIDC Complex, A-1/4 Lakhanpur <br>Kanpur-208024</h4><br>
+                        <h4 class="telight">Telephone:</h4>
+                        <h4> 0512-2582851, 2582852, 2582853</h4><br>
+                        <h4 class="telight">Fax:</h4>
+                        <h4> 0512-2580797</h4>
+                    </div>
+                    <br><br>
+                    <div class="flex-col ">
+                        <div class="flex-row ">
+                            <a href="https://www.facebook.com/UPSIDAGoUP"><span class="social-sym" ><i class="fab fa-facebook-square"></i></span></a>
+                            <a href="https://twitter.com/upsida"><span class="social-sym"><i class="fab fa-twitter "></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p class="tecenter">Copyright © 2021 UPSIDA, U.P., India <br> All rights reserved.</p>
+                <p class="tecenter">Content on this website is published and managed by Uttar Pradesh State Industrial Development Authority.
+                    <br>For any query regarding this website, please contact the “ADMINISTRATOR”.</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        var interval;
+
+        function slideint() {
+            clearInterval(interval);
+            interval = setInterval(function() {
+                plusSlides(1);
+            }, 6500);
+        }
+        slideint();
+
+        function clickSlides(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var menu = document.getElementsByClassName("slid-menu");
+            var grp_menu = document.getElementById("slid-grp-menu");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                menu[i].classList.remove("sli-men-selc");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            menu[slideIndex - 1].classList.add("sli-men-selc");
+            if (slideIndex < 5) {
+                grp_menu.classList.remove("slid-col-rev");
+            } else {
+                grp_menu.classList.add("slid-col-rev");
+            }
+            slideint();
+        }
+
+
+
+        /*common*/
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            scrollFunction();
+            noneall_nav();
+            var currentScrollPos = window.pageYOffset;
+            if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0px";
+                } else {
+                    document.getElementById("navbar").style.top = "-65px";
+                }
+                prevScrollpos = currentScrollPos;
+            } else {
+                document.getElementById("navbar").style.top = "0px";
+            }
+        }
+        var mybutton = document.getElementById("myBtn");
+
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function phone_nav_bar() {
+            var top = document.getElementById('topcloseicon');
+            var nav = document.getElementById('mynav-side');
+            top.classList.toggle("change");
+            nav.classList.toggle("nav-side-open");
+        }
+
+        function noneall_nav() {
+            var cla = document.getElementsByClassName("nav-drop-down");
+            var men = document.getElementsByClassName("drop-men");
+            for (var i = 0; i < cla.length; i++) {
+                cla[i].style.display = "none";
+                men[i].classList.remove("drop-men-open");
+            }
+        }
+
+        function visible_nav(n) {
+            var men = document.getElementsByClassName("drop-men");
+            var cla = document.getElementsByClassName("nav-drop-down");
+            for (var i = 0; i < cla.length; i++) {
+                cla[i].style.display = "none";
+                men[i].classList.remove("drop-men-open");
+            }
+            if (n != 99) {
+                cla[n].style.display = "block";
+                men[n].classList.add("drop-men-open");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyloadImages = document.querySelectorAll("img.lazy");
+            var lazyloadThrottleTimeout;
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+.cpinkl {
+    color: #fd1a55;
+}
+
+.cpinkd {
+    color: #d40239;
+}
+
+.cbluel {
+    color: #349cfd;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.head {
+    background-image: url('../img/office.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 40vh;
+    width: 100%;
+}
+
+.head div {padding: 3vmin 5vmin;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 40vh;
+    height: 100%;
+}
+
+.head div h1 {
+    font-size: 10vh;
+    font-weight: lighter;
+}
+
+.cards-grp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards-item {
+    height: 210px;
+    width: 370px;
+    margin: 15px 10px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid #349cfd;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.three-zero {
+    position: relative;
+}
+
+.whole {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fd1a55;
+    top: 0px;
+    right: 12px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    font-size: 23px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.last-cont {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a4f55;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.word-dot {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.three {
+    position: absolute;
+    height: 140px;
+    width: 340px;
+    left: 15px;
+    top: 15px;
+}
+
+.three-one {
+    padding: 0px 0px 4px 0px;
+    width: 290px;
+    font-size: 23px;
+    color: #002060;
+    font-weight: bold;
+}
+
+.three-two {
+    overflow: hidden;
+    font-size: 16px;
+    color: #4a4f55;
+    font-weight: bold;
+}
+
+.three-three {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    color: #4a4f55;
+}
+
+.three-four {
+    overflow: hidden;
+    font-size: 18px;
+    color: #4a4f55;
+    padding: 15px 0px 0px 0px;
+}
+
+
+/*button*/
+
+.buto-1 {
+    position: relative;
+    width: 150px;
+    height: 36px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.buto-1 .tet {
+    width: 150px;
+    height: 36px;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    z-index: -15;
+    background-color: #fd1a55;
+}
+
+.buto-1 .tet h1 {
+    font-size: 20px;
+    color: #222;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.buto-1 .circl {
+    z-index: 0;
+    background-color: white;
+    position: absolute;
+    width: 146px;
+    height: 32px;
+    border-radius: 16px;
+    top: 18px;
+    transform: translate(-50%, -50%);
+    left: 75px;
+    transition: all 0.4s ease-in-out;
+}
+
+.buto-1:hover .circl {
+    width: 0px;
+    height: 0px;
+}
+
+.buto-1:hover .tet h1 {
+    color: white;
+}
+
+.search {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto 20px;
+    background-color: #242628;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search:before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: relative;
+    background-color: #fd1a55;
+    transition: all 0.5s ease;
+}
+
+.search.open {
+    width: 420px;
+    border-radius: 10px;
+}
+
+.search.open:before {
+    height: 60px;
+    margin: 10px 0 10px 30px;
+    position: absolute;
+}
+
+.search-box {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 90px 10px 45px;
+    font-size: 40px;
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+.search-button {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 3px solid #fd1a55;
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
+
+.search-icon:before {
+    content: '';
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    right: -2px;
+    top: 30px;
+    display: block;
+    background-color: #fd1a55;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+}
+
+.search-icon:after {
+    content: '';
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    right: -12px;
+    top: 40px;
+    display: block;
+    background-color: #fd1a55;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 320px) {
+    .cards-item {
+        width: 320px;
+        height: 190px;
+    }
+    .three {
+        width: 270px;
+    }
+    .three-one {
+        width: 200px;
+        font-size: 20px;
+    }
+    .three-two {
+        font-size: 14px;
+    }
+    .three-three {
+        font-size: 14px;
+    }
+    .three-four {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .cards-item {
+        width: 280px;
+        height: 190px;
+    }
+    .three {
+        width: 230px;
+    }
+    .three-one {
+        width: 180px;
+        font-size: 17px;
+    }
+    .three-two {
+        font-size: 12px;
+    }
+    .three-three {
+        font-size: 12px;
+    }
+    .three-four {
+        font-size: 14px;
+    }
+    .whole {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 450px) {
+    .cards-item {
+        width: 360px;
+    }
+    .three {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .search.open {
+        width: 80vw;
+        border-radius: 10px;
+    }
+    .search {
+        transform: scale(0.75);
+    }
+}
